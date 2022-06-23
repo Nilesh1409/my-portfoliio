@@ -2,6 +2,7 @@ import React from "react";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
 import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
+// import img from ""
 
 export default function GithubRepoCard({ repo, theme }) {
   function openRepoinNewTab(url) {
@@ -31,6 +32,8 @@ export default function GithubRepoCard({ repo, theme }) {
               {repo.name}
             </p>
           </div>
+          <img src="https://image.shutterstock.com/image-vector/no-image-vector-symbol-missing-260nw-1310632172.jpg" />
+
           <p className="repo-description" style={{ color: theme.text }}>
             {repo.description}
           </p>

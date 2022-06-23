@@ -6,7 +6,11 @@ import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { greeting, projectsHeader, publicationsHeader } from "../../portfolio.js";
+import {
+  greeting,
+  projectsHeader,
+  publicationsHeader,
+} from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import PublicationData from "../../shared/opensource/publications.json";
 import "./Projects.css";
@@ -50,17 +54,17 @@ class Projects extends Component {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
-        <Button
+        {/* <Button
           text={"More Projects"}
           className="project-button"
           href={greeting.githubProfile}
           newTab={true}
           theme={theme}
-        />
+        /> */}
 
         {/* Publications  */}
 
-        <div className="basic-projects">
+        {/* <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="publications-heading-div">
               <div className="publications-heading-text-div">
@@ -79,15 +83,15 @@ class Projects extends Component {
               </div>
             </div>
           </Fade>
-        </div>
+        </div> */}
 
-        <div className="repo-cards-div-main">
+        {/* <div className="repo-cards-div-main">
           {PublicationData.data.map((repo) => {
             return <PublicationCard repo={repo} theme={theme} />;
           })}
-        </div>
+        </div> */}
 
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
+        {/* <Footer theme={this.props.theme} onToggle={this.props.onToggle} /> */}
         <TopButton theme={this.props.theme} />
       </div>
     );
