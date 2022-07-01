@@ -1,4 +1,6 @@
+import React from "react";
 // theme.js
+
 export const blueTheme = {
   body: "#EDF9FE",
   text: "#001C55",
@@ -71,16 +73,16 @@ export const blackTheme = {
   headerColor: "#fca31177",
 };
 
-export const pinkTheme = {
-  body: "#FEE9F2",
-  text: "#620E34",
-  highlight: "#FBA7CD",
-  dark: "#31071A",
-  secondaryText: "#ef476f",
-  imageHighlight: "#ef476f",
-  compImgHighlight: "#E6E6E6",
+export const myTheme = {
+  body: "#181818",
+  text: "#f1f1f1",
+  highlight: "rgb(53 51 51)",
+  dark: "rgb(141 141 141)",
+  secondaryText: "#b2b0b0",
+  imageHighlight: "#300000",
+  compImgHighlight: "black",
   jacketColor: "#8d99ae",
-  headerColor: "#ef476f77",
+  headerColor: "#850000",
 };
 
 export const violetTheme = {
@@ -119,4 +121,16 @@ export const orangeTheme = {
   headerColor: "#FF6B3577",
 };
 
+// export let demofun = () =>{
+//   const [exportTheam,setExportTheam] = React.useState(myTheme)
+//    let handleTheme = () =>{
+//     if(exportTheam===myTheme){
+//       setExportTheam(blueTheme)
+//     }else{
+//       setExportTheam(myTheme)
+//     }
+//   }
+// }
+
 export const chosenTheme = blueTheme;
+// export const chosenTheme = myTheme;

@@ -2,6 +2,8 @@ import React from "react";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
 import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Button from "../button/Button";
 // import img from ""
 
 export default function GithubRepoCard({ repo, theme }) {
@@ -10,10 +12,12 @@ export default function GithubRepoCard({ repo, theme }) {
     win.focus();
   }
 
+  console.log("repo", repo);
+
   return (
     <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
       <Fade bottom duration={2000} distance="40px">
-        <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
+        <div key={repo.id}>
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -30,51 +34,121 @@ export default function GithubRepoCard({ repo, theme }) {
             </svg>
             <p className="repo-name" style={{ color: theme.text }}>
               {repo.name}
+              <ProjectLanguages
+                className="repo-languages"
+                logos={repo.languages}
+              />
             </p>
           </div>
-          <img src="https://image.shutterstock.com/image-vector/no-image-vector-symbol-missing-260nw-1310632172.jpg" />
 
-          <p className="repo-description" style={{ color: theme.text }}>
-            {repo.description}
-          </p>
-          <div className="repo-details">
-            <p
-              className="repo-creation-date subTitle"
-              style={{ color: theme.secondaryText }}
-            >
-              Created on {repo.createdAt.split("T")[0]}
-            </p>
-            <ProjectLanguages
-              className="repo-languages"
-              logos={repo.languages}
-            />
-          </div>
-          {/* <div className="repo-stats">
-          <div className="repo-left-stat">
-            <span>
-              <div className="language-color" style={{ backgroundColor: repo.node.primaryLanguage.color }}></div>
-              <p>{repo.node.primaryLanguage.name}</p>
-            </span>
-            <span>
-              <svg aria-hidden="true" className="octicon" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)" className="repo-star-svg">
-                <path
-                  fill-rule="evenodd"
-                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
-                ></path>
-              </svg>
-              <p>{repo.node.forkCount}</p>
-            </span>
-            <span>
-              <svg aria-hidden="true" className="octicon" height="16" role="img" viewBox="0 0 14 16" width="14" fill="rgb(106, 115, 125)" className="repo-star-svg">
-                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
-              </svg>
-              <p>{repo.node.stargazers.totalCount}</p>
-            </span>
-          </div>
-          <div className="repo-right-stat">
-            <p>{repo.node.diskUsage} KB</p>
-          </div>
-        </div> */}
+          {repo.name === "SPOTIFY CLONE" ? (
+            <div className="project-div-main">
+              <div className="project-div-img">
+                <img src="/ezgif.com-gif-maker.gif" />
+              </div>
+              <button
+                className="live-button"
+                onClick={() =>
+                  openRepoinNewTab("https://spotify-webapp-clone.netlify.app/")
+                }
+              >
+                LIVE
+              </button>
+              <button
+                className="live-button"
+                onClick={() =>
+                  openRepoinNewTab(
+                    "https://github.com/deepaksahu3698/Spotify_webapp_Clone/tree/Nilesh"
+                  )
+                }
+              >
+                GITHUB
+              </button>
+              <div className="project-div-discription">
+                <h3>
+                  Here you can listen to all latest songs, Podcasts, of all
+                  kinds of genres.
+                </h3>
+                <h3>Features</h3>
+                <ul>
+                  <li>Sign Up | Login</li>
+                  <li>
+                    Landing Page | Home Page (dynamic) | Search Page | Playlist
+                    Page
+                  </li>
+                  <li>Add song to Playlist | Music Player </li>
+                </ul>
+                <h3>Areas of responsibility</h3>
+                <ul>
+                  <li>Developed Landing Page</li>
+                  <li>Created Home Page with all functionalities </li>
+                  <li>Created SeeAll Page and Navbar</li>
+                  <li>Created Music Player with all functionalities </li>
+                  <li>Developed backend for Web App </li>
+                </ul>
+                <h3>
+                  A collaborative project build by 5 Developers within 7 days
+                </h3>
+              </div>
+            </div>
+          ) : repo.name === "SPARESHUB CLONE      " ? (
+            <div className="project-div-main">
+              <div className="project-div-img">
+                <img src="/ezgif.com-gif-maker (1).gif" />
+              </div>
+              <button
+                className="live-button"
+                onClick={() =>
+                  openRepoinNewTab("https://spotify-webapp-clone.netlify.app/")
+                }
+              >
+                LIVE
+              </button>
+              <button
+                className="live-button"
+                onClick={() =>
+                  openRepoinNewTab(
+                    "https://github.com/mdtabish803116/SpareshubWeakProject/tree/nilesh"
+                  )
+                }
+              >
+                Github
+              </button>
+              <div className="project-div-discription">
+                <h3>
+                  Here you can order all kinds of spares of bike and cars.
+                </h3>
+                <h3>Features</h3>
+                <ul>
+                  <li>Sign Up | Login</li>
+                  <li>Landing Page | Home Page | Cart Page | Payment Page </li>
+                  <li>Add to Cart </li>
+                </ul>
+                <h3>Areas of responsibility</h3>
+                <ul>
+                  <li>Developed Sign Up page using local storage</li>
+                  <li>Created Login Page </li>
+                  <li>Created About section</li>
+                  <li>Developed backend for Web App </li>
+                </ul>
+                <h3>
+                  A collaborative project build by 5 Developers within 7 days
+                </h3>
+              </div>
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </div>
+
+        <p className="repo-description" style={{ color: theme.text }}>
+          {repo.description}
+        </p>
+        <div className="repo-details">
+          <p
+            className="repo-creation-date subTitle"
+            style={{ color: theme.secondaryText }}
+          ></p>
         </div>
       </Fade>
     </div>

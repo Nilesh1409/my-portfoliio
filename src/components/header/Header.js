@@ -4,6 +4,8 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import Button from "../button/Button";
+// import {demofun} from "../../theme"
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -22,6 +24,7 @@ class Header extends Component {
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
+
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
@@ -109,6 +112,7 @@ class Header extends Component {
                 </NavLink>
               </li>
             </ul>
+            {/* <button className="new-theam-button" onClick={demofun} > Change Theam</button> */}
           </header>
         </div>
       </Fade>

@@ -8,6 +8,7 @@
 }
 
 .software-skill-inline-languages {
+  margin-left: 22px;
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0px;
@@ -19,4 +20,7 @@
     margin-right: 10px;
     margin-bottom: 0px;
   }
+}
+.software-skills-main-div > ul {
+  display: flex;
 }

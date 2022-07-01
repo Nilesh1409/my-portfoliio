@@ -2,7 +2,7 @@
   color: rgb(88, 96, 105);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
   padding: 2rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   flex: 1 1 25%;
 }
 .repo-card-div:hover {
@@ -97,6 +97,9 @@
   .repo-card-div {
     flex: 1 1 40%;
   }
+  .project-div-main > h3 {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -119,4 +122,21 @@
   .repo-creation-date {
     font-size: 14px;
   }
+}
+.project-div-main {
+  text-align: left;
+  margin-top: 20px;
+}
+.project-div-main h3 {
+  font-size: 1.6rem;
+  color: #2d2929;
+}
+.live-button {
+  margin: 10px 30px;
+  padding: 5px 25px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  box-shadow: 4px 4px 12px white;
 }
