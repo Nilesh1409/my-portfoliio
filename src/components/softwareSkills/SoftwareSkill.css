@@ -25,11 +25,20 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
+@media (max-width: 768px) {
+  .software-skills-main-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .skill-logo-div {
   background-color: white;
   color: black;
   /* width: 150px; */
-  margin: 10px 20px;
+  /* margin: 10px 20px; */
+  margin: 10px 20px 10px 0;
   padding: 20px;
   width: 140px;
   height: 140px;

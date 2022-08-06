@@ -19,6 +19,22 @@
         {
           "name": "JavaScript",
           "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "ReactJS",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
         }
       ]
     },
@@ -26,7 +42,7 @@
       "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
       "name": "SPARESHUB CLONE      ",
       "createdAt": "2022-26-04T11:53:55Z",
-      "url": "https://github.com/mdtabish803116/SpareshubWeakProject.git",
+      "url": "https://github.com/Nilesh1409/spareshub.git",
       "description": "",
       "isFork": false,
       "languages": [
@@ -37,6 +53,22 @@
         {
           "name": "CSS",
           "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "ReactJS",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
         },
         {
           "name": "JavaScript",

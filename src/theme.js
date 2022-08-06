@@ -74,7 +74,7 @@ export const blackTheme = {
 };
 
 export const myTheme = {
-  body: "#181818",
+  body: "#1f1f1fdb",
   text: "#f1f1f1",
   highlight: "rgb(53 51 51)",
   dark: "rgb(141 141 141)",
@@ -131,6 +131,8 @@ export const orangeTheme = {
 //     }
 //   }
 // }
+// let value = React.useContext(ThemeContext)
+// console.log("theme from context",value)
 
 export const chosenTheme = blueTheme;
 // export const chosenTheme = myTheme;

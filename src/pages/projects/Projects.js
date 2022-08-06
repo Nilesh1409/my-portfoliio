@@ -20,8 +20,8 @@ class Projects extends Component {
   render() {
     const theme = this.props.theme;
     return (
-      <div className="projects-main">
-        <Header theme={theme} />
+      <div className="projects-main" id="projects">
+        {/* <Header theme={theme} /> */}
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">

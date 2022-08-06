@@ -35,21 +35,19 @@ class Header extends Component {
               <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
-            </label>
+
             <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li>
-                <NavLink
-                  to="/home"
-                  tag={Link}
+                <span
+                  // to="/home"
+                  // tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Home
-                </NavLink>
+                  <a href=".projects-main">Home</a>
+                </span>
               </li>
               <li>
                 <NavLink
@@ -63,18 +61,7 @@ class Header extends Component {
                   Education
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink
-                  to="/experience"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Experience
-                </NavLink>
-              </li> */}
+
               <li>
                 <NavLink
                   to="/projects"
@@ -87,18 +74,7 @@ class Header extends Component {
                   Projects
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li> */}
+
               <li>
                 <NavLink
                   to="/contact"

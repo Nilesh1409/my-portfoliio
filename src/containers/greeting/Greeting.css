@@ -82,6 +82,17 @@
   .button-greeting-div {
     justify-content: space-around;
   }
+  .greeting-image-div > img {
+    border-radius: 100%;
+    height: 100%;
+    margin: 15% 19%;
+  }
+  .greeting-image-div {
+    height: 200px;
+  }
+  .greeting-main {
+    margin-bottom: 0;
+  }
 
   .greeting-text {
     font-size: 30px;

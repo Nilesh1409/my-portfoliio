@@ -25,7 +25,9 @@ class ProjectLanguages extends Component {
                   className="iconify"
                   data-icon={logo.iconifyClass}
                   data-inline="false"
-                ></span>
+                >
+                  {" "}
+                </span>
               </li>
             </OverlayTrigger>
           );

@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: false, // Change this to false if you don't want Splash screen.
+  isSplash: false,
 };
 
 //SEO Related settings
@@ -13,8 +13,8 @@ const seo = {
   og: {
     title: "Nilesh Tiwari Portfolio",
     type: "website",
-    // in url you can give your portfolio link
-    url: "",
+
+    url: "https://nilesh-tiwari-portfolio.netlify.app",
   },
 };
 
@@ -26,7 +26,7 @@ const greeting = {
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/file/d/1J60zrL_wqhCZLTb2Uad2OzVOqQtqVqHI/view?usp=sharing",
-  // Give here your portfolio repo link
+
   portfolio_repository:
     "https://drive.google.com/file/d/1J60zrL_wqhCZLTb2Uad2OzVOqQtqVqHI/view?usp=sharing",
   githubProfile: "https://github.com/Nilesh1409",
@@ -130,6 +130,34 @@ const skills = {
             color: "#CB3837",
           },
         },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Postman",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Chakra UI",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Material UI",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
       ],
     },
   ],
@@ -145,8 +173,7 @@ const degrees = {
     {
       title: "Masai School",
       subtitle: "Full Stack Web Development",
-      // logo_path: "masai_logo.svg",
-      // alt_name: "IIITDM Kurnool",
+
       duration: "Sep 2021 - Present",
       descriptions: [
         "⚡ I have learn DS, Algorithms, HTML, React, Redux, NodeJS ExpressJS, MongoDB, Github etc.",
@@ -157,8 +184,7 @@ const degrees = {
     {
       title: "Shree Narayana Guru College of Commerce",
       subtitle: "Bachelor of Management Studies",
-      // logo_path: "masai_logo.svg",
-      // alt_name: "IIITDM Kurnool",
+
       duration: "June 2019 - Present",
       descriptions: [
         "⚡ I learn to take ownership of my own learning, perseverance and go beyond books, etc.",

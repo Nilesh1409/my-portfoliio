@@ -8,6 +8,10 @@
 .repo-card-div:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
+.projectCartButton {
+  display: flex;
+  justify-content: space-around;
+}
 
 .repo-stats {
   display: flex;
@@ -130,6 +134,9 @@
 .project-div-main h3 {
   font-size: 1.6rem;
   color: #2d2929;
+}
+.project-div-img img {
+  width: 100%;
 }
 .live-button {
   margin: 10px 30px;
