@@ -12,7 +12,9 @@
   display: flex;
   justify-content: space-around;
 }
-
+.repo-textstack > img {
+  height: 40px;
+}
 .repo-stats {
   display: flex;
   -webkit-box-pack: justify;

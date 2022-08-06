@@ -39,6 +39,9 @@ export default function GithubRepoCard({ repo, theme }) {
                 logos={repo.languages}
               /> */}
             </p>
+            <div className="repo-textstack">
+              {/* <img src="https://ensocore.com/media/61/reactjs-logo-sticker%20%281%29.jpg" /> */}
+            </div>
           </div>
 
           {repo.name === "SPOTIFY CLONE" ? (
