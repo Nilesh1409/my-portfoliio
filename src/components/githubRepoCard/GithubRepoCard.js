@@ -44,29 +44,31 @@ export default function GithubRepoCard({ repo, theme }) {
             </div>
           </div>
 
-          {repo.name === "SPOTIFY CLONE" ? (
+          {repo.name === "VRBO CLONE" ? (
             <div className="project-div-main">
-              <div className="project-div-img">
-                <img src="/vrbo.gif" />
-              </div>
-              <div className="projectCartButton">
-                <div className="portfolio-repo-btn-div">
-                  <Button
-                    text="LIVE"
-                    newTab={true}
-                    href={"https://vrbo-clone.netlify.app/"}
-                    theme={theme}
-                    className="portfolio-repo-btn"
-                  />
+              <div className="project-img-container">
+                <div className="project-div-img">
+                  <img src="/vrbo.gif" />
                 </div>
-                <div className="portfolio-repo-btn-div">
-                  <Button
-                    text="GITHUB"
-                    newTab={true}
-                    href={"https://github.com/shiva-69/Vrbo.git"}
-                    theme={theme}
-                    className="portfolio-repo-btn"
-                  />
+                <div className="projectCartButton">
+                  <div className="portfolio-repo-btn-div">
+                    <Button
+                      text="LIVE"
+                      newTab={true}
+                      href={"https://vrbo-clone.netlify.app/"}
+                      theme={theme}
+                      className="portfolio-repo-btn"
+                    />
+                  </div>
+                  <div className="portfolio-repo-btn-div">
+                    <Button
+                      text="GITHUB"
+                      newTab={true}
+                      href={"https://github.com/shiva-69/Vrbo.git"}
+                      theme={theme}
+                      className="portfolio-repo-btn"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -90,35 +92,42 @@ export default function GithubRepoCard({ repo, theme }) {
                   <li>Created API for search suggestion</li>
                   <li>Developed backend for Web App</li>
                 </ul>
+                <h3>Tech Stack</h3>
+                <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                <img src="	https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+                <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
+                <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" />
                 <h3>
                   A collaborative project build by 4 Developers within 7 days
                 </h3>
               </div>
             </div>
-          ) : repo.name === "SPARESHUB CLONE      " ? (
+          ) : repo.name === "MODSENS CLONE" ? (
             <div className="project-div-main">
-              <div className="project-div-img">
-                <img src="/modsens.gif" />
-              </div>
-
-              <div className="projectCartButton">
-                <div className="portfolio-repo-btn-div">
-                  <Button
-                    text="LIVE"
-                    newTab={true}
-                    href={"https://modesens-web-app-clone.netlify.app/"}
-                    theme={theme}
-                    className="portfolio-repo-btn"
-                  />
+              <div className="project-img-container">
+                <div className="project-div-img">
+                  <img src="/modsens.gif" />
                 </div>
-                <div className="portfolio-repo-btn-div">
-                  <Button
-                    text="GITHUB"
-                    newTab={true}
-                    href={"https://github.com/akashkmt/ModeSens-Clone.git"}
-                    theme={theme}
-                    className="portfolio-repo-btn"
-                  />
+
+                <div className="projectCartButton">
+                  <div className="portfolio-repo-btn-div">
+                    <Button
+                      text="LIVE"
+                      newTab={true}
+                      href={"https://modesens-web-app-clone.netlify.app/"}
+                      theme={theme}
+                      className="portfolio-repo-btn"
+                    />
+                  </div>
+                  <div className="portfolio-repo-btn-div">
+                    <Button
+                      text="GITHUB"
+                      newTab={true}
+                      href={"https://github.com/akashkmt/ModeSens-Clone.git"}
+                      theme={theme}
+                      className="portfolio-repo-btn"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -146,12 +155,18 @@ export default function GithubRepoCard({ repo, theme }) {
                 <ul>
                   <li>
                     Developed Footer | Navbar (dynamic) with variety of options
-                    to choose{" "}
+                    to choose
                   </li>
                   <li>Created Single Product Page (dynamic) along</li>
                   <li>Added Add To Cart Feature useing Redux</li>
                   <li>Developed backend for Web App </li>
                 </ul>
+                <h3>Tech Stack</h3>
+                <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" />
+                <img src="	https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" />
+                <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
+                <img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" />
                 <h3>
                   A collaborative project build by 5 Developers within 7 days
                 </h3>
